@@ -36,13 +36,19 @@
         </nav>
         <ul class="list center">
           <li class="list-nav">
-            <a class="link-contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="link-contacts" href="mailto:info@devstudio.com">
+              <svg class="icon-header-mail">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="list-nav">
-            <a class="link-contacts" href="tel:+525555296000"
-              >+52 55 5529 6000</a
+            <a class="link-contacts" href="tel:+525555296000">
+              <svg class="icon-header-tel">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +52 55 5529 6000</a
             >
           </li>
         </ul>
@@ -198,28 +204,63 @@
     </main>
 
     <footer class="footer">
-      <div class="conteiner">
-        <a class="link-webstudio-footer" href="#">WebStudio</a>
-        <address class="address-block">
-          <ul class="list address-block">
-            <li>
-              <a class="link-footer-address" href="#"
-                >Calz. Ticomán 500, Ciudad de <br />
-                México, CDMX, México</a
-              >
-            </li>
-            <li>
-              <a class="link-footer-contacts" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a class="link-footer-contacts" href="+525555296000"
-                >+52 55 5529 6000</a
-              >
-            </li>
-          </ul>
-        </address>
+      <div class="container footer-flex">
+        <div class="conteiner cont-footer-contacts">
+          <a class="link-webstudio-footer" href="#">WebStudio</a>
+          <address class="address-block">
+            <ul class="list address-block">
+              <li>
+                <a class="link-footer-address" href="#"
+                  >Calz. Ticomán 500, Ciudad de <br />
+                  México, CDMX, México</a
+                >
+              </li>
+              <li>
+                <a class="link-footer-contacts" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="link-footer-contacts" href="+525555296000"
+                  >+52 55 5529 6000</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <h3 class="text-media-footer">ENCUENTRENOS EN</h3>
+          <div class="container-media-footer">
+            <div class="media-div">
+              <a class="svg-media-footer" href="#">
+                <svg class="svg-media">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="media-div">
+              <a class="svg-media-footer" href="#">
+                <svg class="svg-media">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="media-div">
+              <a class="svg-media-footer" href="#">
+                <svg class="svg-media">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="media-div">
+              <a class="svg-media-footer" href="#">
+                <svg class="svg-media">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
