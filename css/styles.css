@@ -103,10 +103,15 @@ body {
   font-weight: 500;
   line-height: 1.1;
   color: var(--project-color1);
+  fill: var(--project-color1);
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
+}
+
+.link-contacts svg {
+  margin-right: 10px;
 }
 
 .center {
@@ -459,27 +464,14 @@ body {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.icon-header-tel {
-  height: 16px;
-  width: 14px;
-  margin-right: 10px;
-}
-
-.icon-header-mail {
-  height: 16px;
-  width: 20px;
-  margin-right: 10px;
-  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icons-advantage {
   width: 70px;
   height: 70px;
-  margin-right: 100px;
-  margin-top: 25px;
-  margin-left: 100px;
 }
 
 .cont-svg:hover {
@@ -505,34 +497,32 @@ body {
   bottom: 3px;
 }
 
+.list-social-media {
+  display: flex;
+  padding: 0;
+}
+
 .icon-team {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 44px;
   margin-top: 16px;
   margin-bottom: 30px;
 }
 
-.list-social-media {
-  display: flex;
-}
 .link-border {
   border-radius: 50%;
-  height: 44px;
   margin-right: 10px;
   padding: 12px;
   fill: #afb1b8;
+  height: 44px;
 }
 
 .link-border:hover,
 .link-border:focus {
   background: #2196f3;
   fill: #f5f4fa;
-}
-
-.svg-media {
-  width: 20px;
-  height: 20px;
 }
 
 .seccion-clients {
@@ -550,32 +540,25 @@ body {
 }
 
 .list-clients-svg {
-  /* display: flex;
-  gap: 30px;
-  margin-top: 0;
-  padding-left: 0; */
   gap: 30px;
   display: flex;
   padding: 0;
 }
 
-.svg-clients {
-  /* height: 81px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  cursor: pointer; */
-  box-sizing: border-box;
+.a-svg-clientes {
+  display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 81px;
-  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
   fill: #afb1b8;
   cursor: pointer;
 }
 
-.svg-clients-hover:hover .svg-clients {
+.a-svg-clientes:hover,
+.a-svg-clientes:focus {
   fill: var(--project-blue);
   border-color: var(--project-blue);
 }
@@ -598,7 +581,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .container-media-footer {
@@ -606,11 +589,17 @@ body {
   gap: 10px;
 }
 
-.svg-media-footer {
-  fill: #fff;
+.list-svg-footer {
+  display: flex;
+  padding: 0;
 }
 
-.media-div {
+.list-svg-footer li {
+  margin-right: 10px;
+}
+
+.svg-media-footer {
+  fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
@@ -621,6 +610,7 @@ body {
   width: 40px;
 }
 
-.media-div:hover {
+.svg-media-footer:hover,
+.svg-media-footer:focus {
   background-color: var(--project-blue);
 }
